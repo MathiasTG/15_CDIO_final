@@ -36,4 +36,23 @@ public class RecipeDTO {
 	public void setRecipeName(String recipeName) {
 		this.recipeName = recipeName;
 	}
+	/**
+	 * @return the components
+	 */
+	public List<RecipeComponentDTO> getComponents() {
+		return components;
+	}
+	/**
+	 * @param components the components to set
+	 */
+	public void setComponents(List<RecipeComponentDTO> components) {
+		this.components = components;
+	}
+	/**
+	 * 
+	 * @param component adds a component to the current list of components
+	 */
+	public void addComponent(RecipeComponentDTO component){
+		components.add(component);
+	}
 }
